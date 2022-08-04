@@ -1,0 +1,30 @@
+section{
+  display: flex;
+  flex-direction: row;
+}
+div.routes-container{
+  width: 70px;
+}
+.routes-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.4s;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.routes-container button:hover{
+  background-color: #fff;
+}
+.routes-container button:focus{
+  transition: none;
+  border-right: solid 3px red;
+}
+
+div.routers{
+  margin-left: 15px;
+}
