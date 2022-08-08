@@ -9,6 +9,7 @@ import { JavaRouteComponent } from './java-route/java-route.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users-page/users.component';
 import { CustomTableComponent } from './users-page/components/custom-table/custom-table.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomTableComponent } from './users-page/components/custom-table/custo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]
