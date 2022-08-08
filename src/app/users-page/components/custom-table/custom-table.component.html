@@ -1,0 +1,12 @@
+<table>
+  <thead>
+    <tr>
+      <ng-container *ngTemplateOutlet="headers; context: { $implicit: allUsers }"></ng-container>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of allUsers">
+      <ng-container *ngTemplateOutlet="rows; context: { $implicit: row }"></ng-container>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<user-table [allUsers]="users">
+  <ng-template #headers>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Status</th>
+  </ng-template>
+  <ng-template #rows let-row>
+    <td>{{row.id}}</td>
+    <td>{{row.name}}</td>
+    <td>{{row.email}}</td>
+    <td>{{row.gender}}</td>
+    <td>{{row.status}}</td>
+  </ng-template>
+</user-table>

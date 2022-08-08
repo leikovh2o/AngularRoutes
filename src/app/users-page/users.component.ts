@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from './services/users.service';
-import { AllUsers } from './models/usersIndex'
+import { AllUsers } from './models/usersIndex';
 
 
 @Component({
@@ -17,3 +17,4 @@ export class UsersComponent{
     })
   }
 }
+

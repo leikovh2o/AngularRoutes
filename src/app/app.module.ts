@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { HtmlRouteComponent } from './html-route/html-route.component';
 import { JavaRouteComponent } from './java-route/java-route.component';
 import { HomeComponent } from './home/home.component';
-import { UsersComponent } from './users/users.component';
+import { UsersComponent } from './users-page/users.component';
+import { CustomTableComponent } from './users-page/components/custom-table/custom-table.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UsersComponent } from './users/users.component';
     HtmlRouteComponent,
     JavaRouteComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    CustomTableComponent
   ],
   imports: [
     BrowserModule,
