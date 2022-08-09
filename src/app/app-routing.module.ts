@@ -5,6 +5,7 @@ import { HtmlRouteComponent } from './html-route/html-route.component';
 import { JavaRouteComponent } from './java-route/java-route.component';
 import { UsersResolver } from './users-page/services/users.resolver';
 import { UsersComponent } from './users-page/users.component';
+import { CardPageComponent } from './card-page/card-page.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
     path: 'usersTable',
     component: UsersComponent,
     resolve: { message: UsersResolver }
+  },
+  {
+    path: 'cardPage',
+    component: CardPageComponent
   }
 ];
 

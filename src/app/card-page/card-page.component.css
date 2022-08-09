@@ -1,0 +1,313 @@
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+h1.title{
+  font-weight: 700;
+  font-size: 40px;
+}
+.navbar{ 
+  margin: 0;
+  padding: 0;
+}
+.navbar ul{
+  padding: 0;
+}
+.navbar ul li{
+  display: inline;
+  margin-right: 72px;
+}
+.navbar ul li:last-child{
+  margin-right: 0;
+}
+.navbar ul li button{
+  color: #888B92;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  font-size: 24px;
+  height: 100%;
+  padding-bottom: 16px;
+  border-bottom: solid 2px #ECEEEE;
+  transition: 0.3s;
+}
+.navbar ul li button.active{
+  color: #000222;
+  border-bottom: solid 2px #FFDA16;
+  transition: 0.3s;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+.card:first-child{
+  margin-right: 32px;
+  background-color: #F5F7F7;
+}
+.card{
+  border-radius: 24px;
+  width: 336px;
+  height: 594px;
+  padding: 40px;
+}
+.card:last-child{
+  background-color: #000222;
+}
+.card:first-child h2, .card:last-child h2{
+  font-size: 14px;
+  font-weight: 500;
+  color: #FF5544;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+}
+.card:first-child h1{
+  font-weight: 500;
+  font-size: 24px;
+  color: #000222;
+  margin: 0 0 40px 0;
+}
+.card:first-child p:nth-child(3), .card:last-child p:nth-child(3){
+  font-size: 14px;
+  font-weight: 500;
+  color: #888B92;
+}
+.card:first-child p:nth-child(4){
+  font-size: 32px;
+  font-weight: 700;
+  color: #000222;
+  margin: 0 0 8px 0;
+}
+div.progress-bar{
+  height: 12px;
+  width: 296px;
+  border-radius: 12px;
+  background-color: #ECEEEE;
+}
+div.progress-bar div.complete-bar{
+  margin: 0;
+  padding: 0;
+  height: 12px;
+  width: 148px;
+  background-color: #FFDA16;
+  border-radius: 12px;
+}
+div.grila-card{
+  background-color: #fff;
+  height: 23px;
+  width: 64px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #000222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto 0 auto;
+}
+.card:first-child ul, .card:last-child ul{
+  padding: 0;
+  margin: 0;
+}
+.card:first-child ul li, .card:last-child ul li{
+  display: inline;
+  margin-right: 20px;
+}
+.card:first-child ul li:last-child, .card:last-child ul li:last-child{
+  margin: 0;
+}
+.card:first-child ul li button{
+  color: #888B92;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+  background-color: #F5F7F7;
+  cursor: pointer;
+}
+.card:first-child ul li button:hover{
+  color: #000222;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.card:first-child ul li button.active{
+  color: #000222;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.card:first-child .canale{
+  color: #000222;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+div.complete-bar2{
+  margin: 0;
+  padding: 0;
+  height: 12px;
+  width: 213px;
+  background-color: #FFDA16;
+  border-radius: 12px;
+}
+div.small-card{
+  margin: 32px 0 28px 0;
+  background-color: #fff;
+  width: 274px;
+  height: 82px;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  position: relative;
+}
+div.small-card div.card-image, div.small-card2 div.card-image{
+  height: 60px;
+  width: 60px;
+  background-color: #888B92;
+  margin: auto 0;
+}
+div.small-card p{
+  color: #000222;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0 14px 26px;
+}
+div.small-card button, div.small-card2 button{
+  width: 65px;
+  height: 25px;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #000222;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 105px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+div.card:first-child a{
+  font-size: 14px;
+  color: #000222;
+}
+div.price-part, div.price-part2{
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0 0 0;
+}
+div.price-part ul, div.price-part2 ul{
+  padding: 0;
+  margin: 0;
+}
+div.price-part ul li, div.price-part2 ul li{
+  padding: 0;
+  display: block !important;
+}
+div.price-part ul li:first-child p, div.price-part2 ul li:first-child p{
+  color: #888B92;
+  font-size: 14px;
+  margin: 30px 0 0 0;
+}
+div.price-part ul li:last-child p{
+  color: #000222;
+  font-size: 20px;
+  margin: 5px 0 0 0 ;
+}
+div.price-part button, div.price-part2 button{
+  background-color: #FFDA16;
+  color: #000222;
+  font-size: 18px;
+  width: 132px;
+  height: 60px;
+  border: 0;
+  border-radius: 12px;
+  margin: 20px 0 0 auto;
+  cursor: pointer;
+}
+.card:last-child h1{
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 40px 0;
+}
+.card:last-child p:nth-child(4){
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+div.complete-bar3{
+  margin: 0;
+  padding: 0;
+  height: 12px;
+  width: 296px;
+  background-color: #FFDA16;
+  border-radius: 12px;
+}
+div.complete-bar4{
+  margin: 0;
+  padding: 0;
+  height: 12px;
+  width: 213px;
+  background-color: #FFDA16;
+  border-radius: 12px;
+}
+.card:last-child ul li button:hover{
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.card:last-child ul li button.active{
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.card:last-child p.canale{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 2px 0 8px 0;
+}
+div.small-card2{
+  margin: 32px 0 28px 0;
+  background-color: #151632;
+  width: 274px;
+  height: 82px;
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  position: relative;
+}
+div.small-card2 p{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0 14px 26px;
+}
+ul.list-margin{
+  margin-top: 32px !important;
+}
+.card:last-child a{
+  font-size: 14px;
+  color: #fff;
+}
+.card:last-child div.price-part p{
+  color: #fff;
+}
+div.price-part2 ul li:last-child p{
+  color: #fff;
+  font-size: 20px;
+  margin: 5px 0 0 0 ;
+}
+.card:last-child ul li button{
+  color: #888B92;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+  background-color: #000222;
+  cursor: pointer;
+}
