@@ -7,8 +7,10 @@
   </div>
   <div class="routers">
     <router-outlet></router-outlet>
-    <div *transloco="let t">
-      <div>{{ t('buna') }}</div>
-    </div>
+  </div>
+  <div class="lang-container">
+    <button class="en-transloco" (click)="changeLangEn()">en</button>
+    <button class="ru-transloco" (click)="changeLangRu()">ru</button>
+    <button class="ro-transloco" (click)="changeLangRo()">ro</button>
   </div>
 </section>

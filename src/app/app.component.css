@@ -1,6 +1,7 @@
 section{
   display: flex;
   flex-direction: row;
+  width: 100vw;
 }
 div.routes-container{
   width: 70px;
@@ -17,12 +18,29 @@ div.routes-container{
   text-transform: uppercase;
   font-weight: 700;
 }
-.routes-container button:hover{
-  background-color: #fff;
-}
 .routes-container button:focus{
   transition: none;
   border-right: solid 3px red;
+}
+section .lang-container{
+  margin-left: auto;
+  width: 70px;
+}
+.lang-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.4s;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.lang-container button:focus{
+  transition: none;
+  border-left: solid 3px red;
 }
 
 div.routers{
