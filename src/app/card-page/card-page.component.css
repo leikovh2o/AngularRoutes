@@ -1,8 +1,19 @@
+@font-face {
+  font-family: AvenirNext;
+  src: url(../../../fonts/AvenirNext/AvenirNextLTPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: AvenirNext;
+  font-weight: 700;
+  src: url(../../../fonts/AvenirNext/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+
 .card-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70vw;
+  font-family: "AvenirNext";
 }
 h1.title{
   font-weight: 700;
@@ -33,6 +44,11 @@ h1.title{
   border-bottom: solid 2px #ECEEEE;
   transition: 0.3s;
 }
+.navbar ul li button:focus{
+  color: #000222;
+  border-bottom: solid 2px #FFDA16;
+  transition: 0.3s;
+}
 .navbar ul li button.active{
   color: #000222;
   border-bottom: solid 2px #FFDA16;
@@ -58,20 +74,20 @@ section{
 }
 .card:first-child h2, .card:last-child h2{
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #FF5544;
   margin: 0 0 8px 0;
   text-transform: uppercase;
 }
 .card:first-child h1{
-  font-weight: 500;
+  font-weight: 700;
   font-size: 24px;
   color: #000222;
   margin: 0 0 40px 0;
 }
 .card:first-child p:nth-child(3), .card:last-child p:nth-child(3){
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   color: #888B92;
 }
 .card:first-child p:nth-child(4){
@@ -80,13 +96,13 @@ section{
   color: #000222;
   margin: 0 0 8px 0;
 }
-div.progress-bar{
+.card__progress-bar{
   height: 12px;
   width: 296px;
   border-radius: 12px;
   background-color: #ECEEEE;
 }
-div.progress-bar div.complete-bar{
+.card__progress-bar .card__complete-bar{
   margin: 0;
   padding: 0;
   height: 12px;
@@ -94,7 +110,7 @@ div.progress-bar div.complete-bar{
   background-color: #FFDA16;
   border-radius: 12px;
 }
-div.grila-card{
+.card__grila{
   background-color: #fff;
   height: 23px;
   width: 64px;
@@ -135,13 +151,13 @@ div.grila-card{
   text-decoration: underline;
   transition: 0.3s;
 }
-.card:first-child .canale{
+.card:first-child .card__channels{
   color: #000222;
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 8px 0;
 }
-div.complete-bar2{
+.card__complete-bar2{
   margin: 0;
   padding: 0;
   height: 12px;
@@ -149,7 +165,7 @@ div.complete-bar2{
   background-color: #FFDA16;
   border-radius: 12px;
 }
-div.small-card{
+.card__small-card{
   margin: 32px 0 28px 0;
   background-color: #fff;
   width: 274px;
@@ -159,19 +175,19 @@ div.small-card{
   display: flex;
   position: relative;
 }
-div.small-card div.card-image, div.small-card2 div.card-image{
+.card__small-card .card__card-image, .card__small-card2 .card__card-image{
   height: 60px;
   width: 60px;
   background-color: #888B92;
   margin: auto 0;
 }
-div.small-card p{
+.card__small-card p{
   color: #000222;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 14px 26px;
 }
-div.small-card button, div.small-card2 button{
+.card__small-card button, .card__small-card2 button{
   width: 65px;
   height: 25px;
   border-radius: 8px;
@@ -189,34 +205,34 @@ div.small-card button, div.small-card2 button{
   outline: 0;
   cursor: pointer;
 }
-div.card:first-child a{
+.card:first-child a{
   font-size: 14px;
   color: #000222;
 }
-div.price-part, div.price-part2{
+.card__price-part, .card__price-part2{
   display: flex;
   flex-direction: row;
   margin: 24px 0 0 0;
 }
-div.price-part ul, div.price-part2 ul{
+.card__price-part ul, .card__price-part2 ul{
   padding: 0;
   margin: 0;
 }
-div.price-part ul li, div.price-part2 ul li{
+.card__price-part ul li, .card__price-part2 ul li{
   padding: 0;
   display: block !important;
 }
-div.price-part ul li:first-child p, div.price-part2 ul li:first-child p{
+.card__price-part ul li:first-child p, .card__price-part2 ul li:first-child p{
   color: #888B92;
   font-size: 14px;
   margin: 30px 0 0 0;
 }
-div.price-part ul li:last-child p{
+.card__price-part ul li:last-child p{
   color: #000222;
   font-size: 20px;
   margin: 5px 0 0 0 ;
 }
-div.price-part button, div.price-part2 button{
+.card__price-part button, .card__price-part2 button{
   background-color: #FFDA16;
   color: #000222;
   font-size: 18px;
@@ -228,7 +244,7 @@ div.price-part button, div.price-part2 button{
   cursor: pointer;
 }
 .card:last-child h1{
-  font-weight: 500;
+  font-weight: 700;
   font-size: 24px;
   color: #fff;
   margin: 0 0 40px 0;
@@ -239,8 +255,7 @@ div.price-part button, div.price-part2 button{
   color: #fff;
   margin: 0 0 8px 0;
 }
-
-div.complete-bar3{
+.card__complete-bar3{
   margin: 0;
   padding: 0;
   height: 12px;
@@ -248,7 +263,7 @@ div.complete-bar3{
   background-color: #FFDA16;
   border-radius: 12px;
 }
-div.complete-bar4{
+.card__complete-bar4{
   margin: 0;
   padding: 0;
   height: 12px;
@@ -266,13 +281,13 @@ div.complete-bar4{
   text-decoration: underline;
   transition: 0.3s;
 }
-.card:last-child p.canale{
+.card:last-child .card__channels{
   color: #fff;
   font-size: 32px;
   font-weight: 700;
   margin: 2px 0 8px 0;
 }
-div.small-card2{
+.card__small-card2{
   margin: 32px 0 28px 0;
   background-color: #151632;
   width: 274px;
@@ -282,10 +297,10 @@ div.small-card2{
   display: flex;
   position: relative;
 }
-div.small-card2 p{
+.card__small-card2 p{
   color: #ffffff;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 10px 0 14px 26px;
 }
 ul.list-margin{
@@ -298,7 +313,7 @@ ul.list-margin{
 .card:last-child div.price-part p{
   color: #fff;
 }
-div.price-part2 ul li:last-child p{
+.card__price-part2 ul li:last-child p{
   color: #fff;
   font-size: 20px;
   margin: 5px 0 0 0 ;
