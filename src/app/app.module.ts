@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users-page/users.component';
 import { CustomTableComponent } from './users-page/components/custom-table/custom-table.component';
 import { TranslocoRootModule } from './transloco-root.module';
+import { CardPageComponent } from './card-page/card-page.component';
+import { CardComponent } from './card-page/components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TranslocoRootModule } from './transloco-root.module';
     JavaRouteComponent,
     HomeComponent,
     UsersComponent,
-    CustomTableComponent
+    CustomTableComponent,
+    CardComponent,
+    CardPageComponent
   ],
   imports: [
     BrowserModule,

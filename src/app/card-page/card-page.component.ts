@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IAbonnement } from './models/card-index';
 
 @Component({
   selector: 'app-card-page',
@@ -6,54 +7,72 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-page.component.css']
 })
 export class CardPageComponent implements OnInit {
-
+  
+  abonnements: IAbonnement[] = [
+    {
+      cardTitle: "Internet M + TV",
+      cardDescription: "cel mai popular",
+      internetSpeed: "500 Mbps",
+      speedPercent: 50,
+      grids: [
+        {
+          title: "Plus",
+          channelsHd: 100,
+          channelsSd: 178,  
+          prices: {
+            price: 270,
+            promotionalPrice: 200
+          },
+          progressPercentage: 65
+        },
+        {
+          title: "Pro",
+          channelsHd: 114,
+          channelsSd: 199,
+          prices: {
+            price: 280,
+            promotionalPrice: 210
+          },
+          progressPercentage: 100
+        }
+      ],
+    },
+    {
+      cardTitle: "Internet L + TV",
+      cardDescription: "cel mai performant",
+      internetSpeed: "1 Gbps",
+      speedPercent: 100,
+      grids: [
+        {
+          title: "Plus",
+          channelsHd: 100,
+          channelsSd: 178,
+          prices: {
+            price: 320,
+            promotionalPrice: 220
+          },
+          progressPercentage: 65,
+        },
+        {
+          title: "Pro",
+          channelsHd: 114,
+          channelsSd: 199,
+          prices: {
+            price: 330,
+            promotionalPrice: 230
+          },
+          progressPercentage: 100
+        }
+      ],
+      dark: true
+    }
+  ];
+  
   constructor() { 
     
   }
 
   ngOnInit(): void {
-  }
-
-  tvCard1Channels = "178 / 100 HD";
-  tvCard1FullPrice = "270 lei lunar";
-  tvCard1Price = "200 lei lunar";
-
-  tvCard2Channels = "178 / 100 HD";
-  tvCard2FullPrice = "320 lei lunar";
-  tvCard2Price = "220 lei lunar";
-
-  changeCard1ValTvPlus(){
-    this.tvCard1Channels = "178 / 100 HD";
-    this.tvCard1FullPrice = "270 lei lunar";
-    this.tvCard1Price = "200 lei lunar";
-    document.getElementById("TvCard1PlusBtn")?.classList.add("active");
-    document.getElementById("TvCard1ProBtn")?.classList.remove("active");
-  }
-
-  changeCard1ValTvPro(){
-    this.tvCard1Channels = "199 / 114 HD";
-    this.tvCard1FullPrice = "280 lei lunar";
-    this.tvCard1Price = "210 lei lunar";
-    document.getElementById("TvCard1ProBtn")?.classList.add("active");
-    document.getElementById("TvCard1PlusBtn")?.classList.remove("active");
-    
-  }
-  
-  changeCard2ValTvPlus(){
-    this.tvCard2Channels = "178 / 100 HD";
-    this.tvCard2FullPrice = "320 lei lunar";
-    this.tvCard2Price = "220 lei lunar";
-    document.getElementById("TvCard2PlusBtn")?.classList.add("active");
-    document.getElementById("TvCard2ProBtn")?.classList.remove("active");
-  }
-
-  changeCard2ValTvPro(){
-    this.tvCard2Channels = "199 / 114 HD";
-    this.tvCard2FullPrice = "330 lei lunar";
-    this.tvCard2Price = "230 lei lunar";
-    document.getElementById("TvCard2ProBtn")?.classList.add("active");
-    document.getElementById("TvCard2PlusBtn")?.classList.remove("active");
-    
   }
 
 }
