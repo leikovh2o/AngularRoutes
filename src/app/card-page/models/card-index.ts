@@ -1,0 +1,1 @@
+export { IAbonnement } from './abonnement';
