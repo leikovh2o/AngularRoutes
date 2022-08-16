@@ -67,6 +67,7 @@ p.card__internet-speed{
   height: 12px;
   background-color: #FFDA16;
   border-radius: 12px;
+  transition: 0.3s;
 }
 .card__grila{
   background-color: #fff;

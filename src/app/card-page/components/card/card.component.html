@@ -8,13 +8,13 @@
   </div>
   <div class="card__grila" [ngClass]="{'hidden': abonnement.dark}"><p>Grila TV</p></div>
   <ul class="card__channels-selection">
-    <li><button class="active" #tvPlusGrid>TV Plus</button></li>
-    <li><button class="" #tvProGrid>TV Pro</button></li>
+    <li><button class="active" #tvPlusBtn (click)="tvPlusGrid()">TV Plus</button></li>
+    <li><button class="" #tvProBtn (click)="tvProGrid()">TV Pro</button></li>
     <li><button>#</button></li>
   </ul>
-  <p class="card__channels">{{abonnement.grids[0].channelsSd}} / {{abonnement.grids[0].channelsHd}} HD</p>
+  <p class="card__channels" #channels>{{abonnement.grids[0].channelsSd}} / {{abonnement.grids[0].channelsHd}} HD</p>
   <div class="card__progressbar">
-    <div class="card__progressbar--filled" [ngStyle]="{'width.%': abonnement.grids[0].progressPercentage}"></div>
+    <div class="card__progressbar--filled" #progressBar [ngStyle]="{'width.%': abonnement.grids[0].progressPercentage}"></div>
   </div>
   <div class="card__small-card">
     <div class="card__small-card__card-image"></div>
@@ -24,8 +24,8 @@
   <a href="#" class="card__advantage-info">Toate avantajele</a>
   <div class="card__price-part">
     <ul>
-      <li>{{abonnement.grids[0].prices.price}} lei lunar</li>
-      <li>{{abonnement.grids[0].prices.promotionalPrice}} lei lunar</li>
+      <li id="price" #price>{{abonnement.grids[0].prices.price}} lei lunar</li>
+      <li id="promotionalPrice" #promoPrice>{{abonnement.grids[0].prices.promotionalPrice}} lei lunar</li>
     </ul>
     <button>Alege</button>
   </div>
