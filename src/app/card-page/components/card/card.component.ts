@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild, HostBinding,Directive } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { IAbonnementGrid } from '../../models/abonnement';
 import { IAbonnement } from '../../models/card-index';
 
