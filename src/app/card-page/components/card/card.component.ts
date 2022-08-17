@@ -17,7 +17,7 @@ export class CardComponent{
   @ViewChild('progressBar') progress: ElementRef;
   @ViewChild('tvPlusBtn') tvPlus: ElementRef;
   @ViewChild('tvProBtn') tvPro: ElementRef;
-  selectedGridprice: IAbonnementGrid;
+  selectedGridprice: IAbonnementGrid; 
 
   tvPlusGrid(){
     this.channels.nativeElement.innerHTML = this.abonnement.grids[0].channelsSd + " / " + this.abonnement.grids[0].channelsHd + "HD";
