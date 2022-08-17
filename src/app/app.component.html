@@ -1,13 +1,15 @@
 
 <section>
   <div class="routes-container">
-    <button class="html-route-btn" [routerLink]="['/htmlRoute']"><p>html</p></button>
-    <button class="java-route-btn" [routerLink]="['/javaRoute']"><p>java</p></button>
-    <button class="java-route-btn" [routerLink]="['/usersTable']"><p>users</p></button>
-    <button class="java-route-btn" [routerLink]="['/cardPage']"><p>cards</p></button>
+    <button [routerLink]="['/htmlRoute']"><p>html</p></button>
+    <button [routerLink]="['/javaRoute']"><p>java</p></button>
+    <button [routerLink]="['/usersTable']"><p>users</p></button>
+    <button [routerLink]="['/cardPage']"><p>cards</p></button>
+    <button [routerLink]="['/pipesPage']"><p>pipes</p></button>
   </div>
   <div class="routers">
     <router-outlet></router-outlet>
+    <app-ex></app-ex>
   </div>
   <div class="lang-container">
     <button class="en-transloco" (click)="changeLangEn()">en</button>
