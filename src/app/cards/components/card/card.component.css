@@ -33,20 +33,20 @@
 
 .card__description{
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   color: #FF5544;
   margin: 0 0 8px 0;
   text-transform: uppercase;
 }
 .card__title{
-  font-weight: 700;
+  font-weight: 500;
   font-size: 24px;
   color: #000222;
   margin: 0 0 40px 0;
 }
 p.card__internet-type{
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   color: #888B92;
 }
 p.card__internet-speed{
@@ -67,7 +67,7 @@ p.card__internet-speed{
   height: 12px;
   background-color: #FFDA16;
   border-radius: 12px;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 .card__grila{
   background-color: #fff;
@@ -136,7 +136,7 @@ div.card__small-card__card-image{
 .card__small-card p{
   color: #000222;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 5px 0 14px 26px;
 }
 .card__small-card button{

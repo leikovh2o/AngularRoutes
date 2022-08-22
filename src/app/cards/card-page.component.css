@@ -1,30 +1,32 @@
 @font-face {
   font-family: AvenirNext;
-  src: url(../../../fonts/AvenirNext/AvenirNextLTPro-Regular.otf) format("opentype");
+  font-weight: 500;
+  src: url(../../../fonts/AvenirNext/AvenirNext-Medium-06.ttf) format("truetype");
 }
 @font-face {
   font-family: AvenirNext;
   font-weight: 700;
-  src: url(../../../fonts/AvenirNext/AvenirNextLTPro-Bold.otf) format("opentype");
+  src: url(../../../fonts/AvenirNext/AvenirNext-Bold-01.ttf) format("truetype");
 }
 
 .card-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 70vw;
   font-family: "AvenirNext";
+  margin-left: 160px;
 }
 h1.title{
   font-weight: 700;
   font-size: 40px;
 }
-.navbar{ 
+/* .navbar{ 
   margin: 0;
   padding: 0;
 }
 .navbar ul{
   padding: 0;
+  margin: 0 0 52px 0;
 }
 .navbar ul li{
   display: inline;
@@ -54,8 +56,70 @@ h1.title{
   border-bottom: solid 2px #FFDA16;
   transition: 0.3s;
 }
+ */
 
+.menu{
+  padding: 0;
+  margin: 0;
+  display: inline;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+.menu li{
+  display: inline-block;
+  margin-right: 72px;
+}
+li.menu__item__four{
+  margin-right: 0 !important;
+}
+.menu li a{
+  display: inline-block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #888B92;
+  font-size: 24px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+li.active a{
+  color: #000222 !important;
+}
+.menu li:hover,
+.menu li a:hover{
+  color: #000222;
+}
+.menu__bar{
+  height: 2px;
+  width: 714px;
+  background-color: #ECEEEE;
+  z-index: 0;
+}
+.menu__bar--filled{
+  margin: 0;
+  padding: 0;
+  height: 2px;
+  background-color: #FFDA16;
+  width: 132px;
+  z-index: 1;
+  transition: 0.5s;
+}
+li.menu__item__two:hover ~ .menu__bar>.menu__bar--filled,
+li.menu__item__two:focus ~ .menu__bar>.menu__bar--filled{
+  width: 87px;
+  margin-left: 28.5%;
+}
+li.menu__item__three:hover ~ .menu__bar>.menu__bar--filled,
+li.menu__item__three:focus ~ .menu__bar>.menu__bar--filled{
+  width: 123px;
+  margin-left: 50.5%;
+}
+li.menu__item__four:hover ~ .menu__bar>.menu__bar--filled,
+li.menu__item__four:focus ~ .menu__bar>.menu__bar--filled{
+  width: 156px;
+  margin-left: 78%;
+}
 section{
   display: flex;
   flex-direction: row;
+  margin-top: 56px;
 }
